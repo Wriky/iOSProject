@@ -8,10 +8,14 @@
 
 #import "WYMessageViewController.h"
 #import "WYChatViewController.h"
+#import "WYScanViewController.h"
 
 @interface WYMessageViewController ()
 
 @property (nonatomic, strong) UIButton *chatButton;
+
+@property (nonatomic, strong) UIButton *scanButton;
+
 
 @end
 
@@ -22,6 +26,11 @@
     
     self.view.backgroundColor = [UIColor whiteColor];
     [self.view addSubview:self.chatButton];
+    
+    [self.view addSubview:self.scanButton];
+    
+    
+    
 }
 
 - (UIButton *)chatButton {
@@ -35,11 +44,30 @@
     return _chatButton;
 }
 
+- (UIButton *)scanButton {
+    if (!_scanButton) {
+        _scanButton = [UIButton buttonWithType:0];
+        _scanButton.frame = CGRectMake(100, 200, 60, 40);
+        [_scanButton setTitle:@"扫一扫" forState:UIControlStateNormal];
+        [_scanButton setTitleColor:[UIColor blueColor] forState:UIControlStateNormal];
+        [_scanButton addTarget:self action:@selector(scanButtonClick:) forControlEvents:UIControlEventTouchUpInside];
+    }
+    return _scanButton;
+}
+
 - (void)chatButtonClick:(UIButton *)button {
     WYChatViewController *vc = [WYChatViewController new];
     vc.hidesBottomBarWhenPushed = YES;
     [self.navigationController pushViewController:vc animated:YES];
 }
+
+- (void)scanButtonClick:(UIButton *)button {
+    WYScanViewController *vc = [WYScanViewController new];
+    vc.hidesBottomBarWhenPushed = YES;
+    [self.navigationController pushViewController:vc animated:YES];
+    
+}
+
 
 
 @end

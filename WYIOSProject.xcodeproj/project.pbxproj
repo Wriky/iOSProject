@@ -10,6 +10,7 @@
 		B46F3AF03850B045BA08B177 /* Pods_WYIOSProjectUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 577CA5859A272BB9B4F4B59D /* Pods_WYIOSProjectUITests.framework */; };
 		B4C3F72BE4FBDEEE45EEE5D4 /* Pods_WYIOSProject.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BB70B6DD1F08059C253A872D /* Pods_WYIOSProject.framework */; };
 		BA9014F5356A1F3E1EF6B2FD /* Pods_WYIOSProjectTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3185E8F26B01404DD13701C0 /* Pods_WYIOSProjectTests.framework */; };
+		E01F0960210EF3F100C201A6 /* WYScanViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E01F095F210EF3F100C201A6 /* WYScanViewController.m */; };
 		E034967920B6C8BE0032622A /* WYChatViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E034967820B6C8BE0032622A /* WYChatViewController.m */; };
 		E034969120B7B4230032622A /* WYBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E034968D20B7B4220032622A /* WYBaseViewController.m */; };
 		E034969220B7B4230032622A /* WYBaseNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = E034968E20B7B4220032622A /* WYBaseNavigationController.m */; };
@@ -82,6 +83,8 @@
 		A021A6DEC4E32BBF32C81D64 /* Pods-WYIOSProjectTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WYIOSProjectTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WYIOSProjectTests/Pods-WYIOSProjectTests.debug.xcconfig"; sourceTree = "<group>"; };
 		B98F59C8AFB34C424464C53C /* Pods-WYIOSProject.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WYIOSProject.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WYIOSProject/Pods-WYIOSProject.debug.xcconfig"; sourceTree = "<group>"; };
 		BB70B6DD1F08059C253A872D /* Pods_WYIOSProject.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WYIOSProject.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E01F095E210EF3F100C201A6 /* WYScanViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WYScanViewController.h; sourceTree = "<group>"; };
+		E01F095F210EF3F100C201A6 /* WYScanViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WYScanViewController.m; sourceTree = "<group>"; };
 		E034967720B6C8BE0032622A /* WYChatViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WYChatViewController.h; sourceTree = "<group>"; };
 		E034967820B6C8BE0032622A /* WYChatViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WYChatViewController.m; sourceTree = "<group>"; };
 		E034968B20B7B4220032622A /* WYBaseNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WYBaseNavigationController.h; sourceTree = "<group>"; };
@@ -243,6 +246,8 @@
 			children = (
 				E03496F120BFEDC40032622A /* WYMessageViewController.h */,
 				E03496F220BFEDC40032622A /* WYMessageViewController.m */,
+				E01F095E210EF3F100C201A6 /* WYScanViewController.h */,
+				E01F095F210EF3F100C201A6 /* WYScanViewController.m */,
 				E034967720B6C8BE0032622A /* WYChatViewController.h */,
 				E034967820B6C8BE0032622A /* WYChatViewController.m */,
 				E03496E020BEA2900032622A /* WYChatMessageCell.h */,
@@ -490,6 +495,13 @@
 			path = CustomView;
 			sourceTree = "<group>";
 		};
+		E04827A9210093F400FC1D35 /* Scan */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Scan;
+			sourceTree = "<group>";
+		};
 		E09F631A20DB3FB70038EB00 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
@@ -560,6 +572,7 @@
 		E0C92A8C20805F6200740D8D /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				E04827A9210093F400FC1D35 /* Scan */,
 				E03496F820C0F8C80032622A /* CustomView */,
 				E034967A20B6C8C70032622A /* Base */,
 				E03496D720BE89F70032622A /* MainTabBar */,
@@ -709,6 +722,7 @@
 				"${SRCROOT}/Pods/Target Support Files/Pods-WYIOSProject/Pods-WYIOSProject-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/AFNetworking/AFNetworking.framework",
 				"${BUILT_PRODUCTS_DIR}/FDFullscreenPopGesture/FDFullscreenPopGesture.framework",
+				"${BUILT_PRODUCTS_DIR}/LBXScan/LBXScan.framework",
 				"${BUILT_PRODUCTS_DIR}/MJExtension/MJExtension.framework",
 				"${BUILT_PRODUCTS_DIR}/MOFSPickerManager/MOFSPickerManager.framework",
 				"${BUILT_PRODUCTS_DIR}/Masonry/Masonry.framework",
@@ -723,6 +737,7 @@
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AFNetworking.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FDFullscreenPopGesture.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/LBXScan.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MJExtension.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MOFSPickerManager.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Masonry.framework",
@@ -816,6 +831,7 @@
 				E034967920B6C8BE0032622A /* WYChatViewController.m in Sources */,
 				E0C92A5C20805E5D00740D8D /* AppDelegate.m in Sources */,
 				E03496C720B7B71B0032622A /* UIButton+Additions.m in Sources */,
+				E01F0960210EF3F100C201A6 /* WYScanViewController.m in Sources */,
 				E03496D520BE75E30032622A /* WYCheckout.m in Sources */,
 				E03496C620B7B71B0032622A /* UIImage+Additions.m in Sources */,
 				E03496C820B7B71B0032622A /* UIButton+EnlargeArea.m in Sources */,
@@ -1001,6 +1017,7 @@
 				DEVELOPMENT_TEAM = 7C2JFD9GT2;
 				GCC_PREFIX_HEADER = WYIOSProject/Config/PrefixHeader.pch;
 				INFOPLIST_FILE = WYIOSProject/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -1020,6 +1037,7 @@
 				DEVELOPMENT_TEAM = 7C2JFD9GT2;
 				GCC_PREFIX_HEADER = WYIOSProject/Config/PrefixHeader.pch;
 				INFOPLIST_FILE = WYIOSProject/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

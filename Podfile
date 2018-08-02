@@ -24,6 +24,8 @@ target 'WYIOSProject' do
  pod 'MOFSPickerManager'
  pod 'FDFullscreenPopGesture'
  pod 'MJExtension'
+ pod 'LBXScan/LBXZXing'
+ pod 'LBXScan/UI'
 
 end
 
