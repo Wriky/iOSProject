@@ -14,6 +14,9 @@
 #import "WYToolKit.h"
 #import "WYConst.h"
 
+#import "UIFont+Additions.h"
+#import "WYColorConfiguration.h"
+
 #define LBXScan_Define_ZXing   //下载了ZXing模块
 #define LBXScan_Define_UI     //下载了界面模块
 

@@ -22,6 +22,7 @@ static NSArray *hiddenNavBarClassArray = nil;
     disableSwipeBackContoller = @[
                                   ];
     hiddenNavBarClassArray = @[
+                               NSClassFromString(@"WYScanReaderViewController")
                                ];
 }
 

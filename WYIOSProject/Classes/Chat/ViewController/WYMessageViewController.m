@@ -8,7 +8,7 @@
 
 #import "WYMessageViewController.h"
 #import "WYChatViewController.h"
-#import "WYScanViewController.h"
+#import "WYScanManager.h"
 
 @interface WYMessageViewController ()
 
@@ -28,8 +28,6 @@
     [self.view addSubview:self.chatButton];
     
     [self.view addSubview:self.scanButton];
-    
-    
     
 }
 
@@ -62,9 +60,11 @@
 }
 
 - (void)scanButtonClick:(UIButton *)button {
-    WYScanViewController *vc = [WYScanViewController new];
-    vc.hidesBottomBarWhenPushed = YES;
-    [self.navigationController pushViewController:vc animated:YES];
+    [WYScanManager startScanCode:self Type:nil Success:^(id response) {
+        
+    } Failure:^(id response) {
+        
+    }];
     
 }
 

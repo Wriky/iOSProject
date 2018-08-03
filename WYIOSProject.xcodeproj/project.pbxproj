@@ -10,7 +10,10 @@
 		B46F3AF03850B045BA08B177 /* Pods_WYIOSProjectUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 577CA5859A272BB9B4F4B59D /* Pods_WYIOSProjectUITests.framework */; };
 		B4C3F72BE4FBDEEE45EEE5D4 /* Pods_WYIOSProject.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BB70B6DD1F08059C253A872D /* Pods_WYIOSProject.framework */; };
 		BA9014F5356A1F3E1EF6B2FD /* Pods_WYIOSProjectTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3185E8F26B01404DD13701C0 /* Pods_WYIOSProjectTests.framework */; };
-		E01F0960210EF3F100C201A6 /* WYScanViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E01F095F210EF3F100C201A6 /* WYScanViewController.m */; };
+		E006B59B211431E20063F2A3 /* WYScanManager.m in Sources */ = {isa = PBXBuildFile; fileRef = E006B59A211431E20063F2A3 /* WYScanManager.m */; };
+		E006B5A2211432CF0063F2A3 /* WYAlertViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E006B5A1211432CF0063F2A3 /* WYAlertViewController.m */; };
+		E006B5A5211434670063F2A3 /* WYScanPermission.m in Sources */ = {isa = PBXBuildFile; fileRef = E006B5A4211434670063F2A3 /* WYScanPermission.m */; };
+		E01F0960210EF3F100C201A6 /* WYScanReaderViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E01F095F210EF3F100C201A6 /* WYScanReaderViewController.m */; };
 		E034967920B6C8BE0032622A /* WYChatViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E034967820B6C8BE0032622A /* WYChatViewController.m */; };
 		E034969120B7B4230032622A /* WYBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E034968D20B7B4220032622A /* WYBaseViewController.m */; };
 		E034969220B7B4230032622A /* WYBaseNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = E034968E20B7B4220032622A /* WYBaseNavigationController.m */; };
@@ -83,8 +86,14 @@
 		A021A6DEC4E32BBF32C81D64 /* Pods-WYIOSProjectTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WYIOSProjectTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WYIOSProjectTests/Pods-WYIOSProjectTests.debug.xcconfig"; sourceTree = "<group>"; };
 		B98F59C8AFB34C424464C53C /* Pods-WYIOSProject.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WYIOSProject.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WYIOSProject/Pods-WYIOSProject.debug.xcconfig"; sourceTree = "<group>"; };
 		BB70B6DD1F08059C253A872D /* Pods_WYIOSProject.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WYIOSProject.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		E01F095E210EF3F100C201A6 /* WYScanViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WYScanViewController.h; sourceTree = "<group>"; };
-		E01F095F210EF3F100C201A6 /* WYScanViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WYScanViewController.m; sourceTree = "<group>"; };
+		E006B599211431E20063F2A3 /* WYScanManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WYScanManager.h; sourceTree = "<group>"; };
+		E006B59A211431E20063F2A3 /* WYScanManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WYScanManager.m; sourceTree = "<group>"; };
+		E006B5A0211432CF0063F2A3 /* WYAlertViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WYAlertViewController.h; sourceTree = "<group>"; };
+		E006B5A1211432CF0063F2A3 /* WYAlertViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WYAlertViewController.m; sourceTree = "<group>"; };
+		E006B5A3211434670063F2A3 /* WYScanPermission.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WYScanPermission.h; sourceTree = "<group>"; };
+		E006B5A4211434670063F2A3 /* WYScanPermission.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WYScanPermission.m; sourceTree = "<group>"; };
+		E01F095E210EF3F100C201A6 /* WYScanReaderViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WYScanReaderViewController.h; sourceTree = "<group>"; };
+		E01F095F210EF3F100C201A6 /* WYScanReaderViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WYScanReaderViewController.m; sourceTree = "<group>"; };
 		E034967720B6C8BE0032622A /* WYChatViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WYChatViewController.h; sourceTree = "<group>"; };
 		E034967820B6C8BE0032622A /* WYChatViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WYChatViewController.m; sourceTree = "<group>"; };
 		E034968B20B7B4220032622A /* WYBaseNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WYBaseNavigationController.h; sourceTree = "<group>"; };
@@ -231,6 +240,54 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		E006B597211431B30063F2A3 /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+				E006B598211431C10063F2A3 /* QRCode */,
+			);
+			path = Manager;
+			sourceTree = "<group>";
+		};
+		E006B598211431C10063F2A3 /* QRCode */ = {
+			isa = PBXGroup;
+			children = (
+				E006B599211431E20063F2A3 /* WYScanManager.h */,
+				E006B59A211431E20063F2A3 /* WYScanManager.m */,
+				E01F095E210EF3F100C201A6 /* WYScanReaderViewController.h */,
+				E01F095F210EF3F100C201A6 /* WYScanReaderViewController.m */,
+				E006B5A3211434670063F2A3 /* WYScanPermission.h */,
+				E006B5A4211434670063F2A3 /* WYScanPermission.m */,
+			);
+			path = QRCode;
+			sourceTree = "<group>";
+		};
+		E006B59C211432850063F2A3 /* Alert */ = {
+			isa = PBXGroup;
+			children = (
+				E006B5A0211432CF0063F2A3 /* WYAlertViewController.h */,
+				E006B5A1211432CF0063F2A3 /* WYAlertViewController.m */,
+			);
+			path = Alert;
+			sourceTree = "<group>";
+		};
+		E006B59E211432980063F2A3 /* CheckOut */ = {
+			isa = PBXGroup;
+			children = (
+				E03496D420BE75E30032622A /* WYCheckout.h */,
+				E03496D320BE75E30032622A /* WYCheckout.m */,
+			);
+			path = CheckOut;
+			sourceTree = "<group>";
+		};
+		E006B59F211432A20063F2A3 /* Tool */ = {
+			isa = PBXGroup;
+			children = (
+				E0DA980A20D3697000C5546B /* WYToolKit.h */,
+				E0DA980B20D3697000C5546B /* WYToolKit.m */,
+			);
+			path = Tool;
+			sourceTree = "<group>";
+		};
 		E034967520B6C87A0032622A /* Chat */ = {
 			isa = PBXGroup;
 			children = (
@@ -246,8 +303,6 @@
 			children = (
 				E03496F120BFEDC40032622A /* WYMessageViewController.h */,
 				E03496F220BFEDC40032622A /* WYMessageViewController.m */,
-				E01F095E210EF3F100C201A6 /* WYScanViewController.h */,
-				E01F095F210EF3F100C201A6 /* WYScanViewController.m */,
 				E034967720B6C8BE0032622A /* WYChatViewController.h */,
 				E034967820B6C8BE0032622A /* WYChatViewController.m */,
 				E03496E020BEA2900032622A /* WYChatMessageCell.h */,
@@ -322,10 +377,9 @@
 		E034968A20B6C9EF0032622A /* Utilities */ = {
 			isa = PBXGroup;
 			children = (
-				E03496D420BE75E30032622A /* WYCheckout.h */,
-				E03496D320BE75E30032622A /* WYCheckout.m */,
-				E0DA980A20D3697000C5546B /* WYToolKit.h */,
-				E0DA980B20D3697000C5546B /* WYToolKit.m */,
+				E006B59F211432A20063F2A3 /* Tool */,
+				E006B59E211432980063F2A3 /* CheckOut */,
+				E006B59C211432850063F2A3 /* Alert */,
 			);
 			path = Utilities;
 			sourceTree = "<group>";
@@ -542,6 +596,7 @@
 		E0C92A5920805E5D00740D8D /* WYIOSProject */ = {
 			isa = PBXGroup;
 			children = (
+				E006B597211431B30063F2A3 /* Manager */,
 				E03496A620B7B71B0032622A /* Categories */,
 				E034968A20B6C9EF0032622A /* Utilities */,
 				E034968920B6C9E70032622A /* Config */,
@@ -815,6 +870,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E03496D020B7B71B0032622A /* UITextField+Additions.m in Sources */,
+				E006B5A2211432CF0063F2A3 /* WYAlertViewController.m in Sources */,
 				E03496FB20C0F8E90032622A /* WYTextField.m in Sources */,
 				E0C92A6A20805E6000740D8D /* main.m in Sources */,
 				E034971020C5466F0032622A /* WYEmotionCollectionView.m in Sources */,
@@ -828,15 +884,17 @@
 				E034969320B7B4230032622A /* WYBaseTableViewController.m in Sources */,
 				E03496CE20B7B71B0032622A /* NSString+Addtions.m in Sources */,
 				E034969A20B7B4460032622A /* WYBaseCollectionViewCell.m in Sources */,
+				E006B59B211431E20063F2A3 /* WYScanManager.m in Sources */,
 				E034967920B6C8BE0032622A /* WYChatViewController.m in Sources */,
 				E0C92A5C20805E5D00740D8D /* AppDelegate.m in Sources */,
 				E03496C720B7B71B0032622A /* UIButton+Additions.m in Sources */,
-				E01F0960210EF3F100C201A6 /* WYScanViewController.m in Sources */,
+				E01F0960210EF3F100C201A6 /* WYScanReaderViewController.m in Sources */,
 				E03496D520BE75E30032622A /* WYCheckout.m in Sources */,
 				E03496C620B7B71B0032622A /* UIImage+Additions.m in Sources */,
 				E03496C820B7B71B0032622A /* UIButton+EnlargeArea.m in Sources */,
 				E03496DF20BE8D9A0032622A /* WYVideoViewController.m in Sources */,
 				E03496CB20B7B71B0032622A /* UIFont+Additions.m in Sources */,
+				E006B5A5211434670063F2A3 /* WYScanPermission.m in Sources */,
 				E034970420C52A670032622A /* WYChatMoreView.m in Sources */,
 				E03496EB20BFA6C60032622A /* WYChatViewModel.m in Sources */,
 				E0DA980C20D3697000C5546B /* WYToolKit.m in Sources */,
@@ -1017,14 +1075,14 @@
 				DEVELOPMENT_TEAM = 7C2JFD9GT2;
 				GCC_PREFIX_HEADER = WYIOSProject/Config/PrefixHeader.pch;
 				INFOPLIST_FILE = WYIOSProject/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.viper.WYIOSProject;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -1037,14 +1095,14 @@
 				DEVELOPMENT_TEAM = 7C2JFD9GT2;
 				GCC_PREFIX_HEADER = WYIOSProject/Config/PrefixHeader.pch;
 				INFOPLIST_FILE = WYIOSProject/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.viper.WYIOSProject;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
