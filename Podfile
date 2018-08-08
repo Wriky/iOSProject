@@ -26,7 +26,7 @@ target 'WYIOSProject' do
  pod 'MJExtension'
  pod 'LBXScan/LBXZXing'
  pod 'LBXScan/UI'
-
+ pod 'CentrifugeiOS'
 end
 
 
